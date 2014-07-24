@@ -14,6 +14,10 @@
 		045C325A1980321B00165D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045C32581980321B00165D44 /* Main.storyboard */; };
 		045C325C1980321B00165D44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045C325B1980321B00165D44 /* Images.xcassets */; };
 		045C32681980321B00165D44 /* CardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C32671980321B00165D44 /* CardsTests.m */; };
+		045C3274198035CF00165D44 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C3273198035CF00165D44 /* Card.m */; };
+		045C327719803EAA00165D44 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C327619803EAA00165D44 /* Deck.m */; };
+		045C327A198043FD00165D44 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C3279198043FD00165D44 /* PlayingCard.m */; };
+		045C327E19804D3200165D44 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 045C327D19804D3200165D44 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		045C32611980321B00165D44 /* CardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045C32661980321B00165D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045C32671980321B00165D44 /* CardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsTests.m; sourceTree = "<group>"; };
+		045C32721980325D00165D44 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		045C3273198035CF00165D44 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		045C327519803E7B00165D44 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		045C327619803EAA00165D44 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		045C3279198043FD00165D44 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		045C327B1980442700165D44 /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		045C327C19804D1A00165D44 /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		045C327D19804D3200165D44 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,14 @@
 		045C32401980321B00165D44 = {
 			isa = PBXGroup;
 			children = (
+				045C327B1980442700165D44 /* PlayingCard.h */,
+				045C327C19804D1A00165D44 /* PlayingCardDeck.h */,
+				045C327D19804D3200165D44 /* PlayingCardDeck.m */,
+				045C32721980325D00165D44 /* Card.h */,
+				045C3279198043FD00165D44 /* PlayingCard.m */,
+				045C3273198035CF00165D44 /* Card.m */,
+				045C327519803E7B00165D44 /* Deck.h */,
+				045C327619803EAA00165D44 /* Deck.m */,
 				045C324B1980321B00165D44 /* Cards */,
 				045C32641980321B00165D44 /* CardsTests */,
 				045C324A1980321B00165D44 /* Products */,
@@ -219,9 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045C327A198043FD00165D44 /* PlayingCard.m in Sources */,
+				045C327719803EAA00165D44 /* Deck.m in Sources */,
 				045C32521980321B00165D44 /* AppDelegate.m in Sources */,
 				045C32571980321B00165D44 /* GameViewController.m in Sources */,
+				045C327E19804D3200165D44 /* PlayingCardDeck.m in Sources */,
 				045C324F1980321B00165D44 /* main.m in Sources */,
+				045C3274198035CF00165D44 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Cards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -348,6 +373,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Cards/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
